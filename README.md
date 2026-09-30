@@ -1,4 +1,3 @@
-cat << 'EOF' > ~/ejercicio-demonio/README.md
 # Servicio Continuo y Demonio con Systemd en Ubuntu
 
 ## 🎯 Objetivos
@@ -20,7 +19,7 @@ cat << 'EOF' > ~/ejercicio-demonio/README.md
 
 | Comando / Parámetro | Función Técnica en la Práctica |
 | :--- | :--- |
-| `while true; do ... sleep 2; done` | Bucle de ejecución infinita que mantiene al proceso activo y consultando métricas periódicamente. |
+| `while true; do ... sleep 2; done` | Bucle de ejecución infinita que mantiene al proceso activo consultando métricas periódicamente. |
 | `$$` | Variable especial de shell que expande dinámicamente el PID (Process ID) asignado al proceso en ejecución. |
 | `date '+%Y-%m-%d %H:%M:%S'` | Obtiene la marca temporal exacta incluyendo segundos para auditar la frecuencia continua de registro. |
 | `free -m` | Consulta las estructuras de memoria en `/proc/meminfo` para calcular el porcentaje de RAM física ocupada. |
@@ -33,10 +32,10 @@ cat << 'EOF' > ~/ejercicio-demonio/README.md
 
 ## 📸 Evidencias de la Terminal
 
-| <img src="Terminal-Terminal-01-demonio-activo.png" width="380"/> | <img src="Terminal-Terminal-02-bitacora-continua.png" width="380"/> |
+| <img src="Terminal/Terminal-Terminal-01-demonio-activo.png" width="380"/> | <img src="Terminal/Terminal-Terminal-02-bitacora-continua.png" width="380"/> |
 | :---: | :---: |
 | **1. Demonio activo en Systemd (`running`)** | **2. Bitácora continua con segundos y PID** |
-| <img src="Terminal/Terminal-03-kill-y-resurreccion.png" width="380"/> | <img src="Terminal/Terminal-04-cambio-pid-en-log.png" width="380"/> |
+| <img src="Terminal/Terminal-Terminal-03-kill-y-resurreccion.png" width="380"/> | <img src="Terminal/Terminal-Terminal-04-cambio-pid-en-log.png" width="380"/> |
 | **3. Muerte forzada con `kill -9` y nuevo PID** | **4. Registro del cambio de PID en bitácora** |
 
 ---

@@ -1,0 +1,13 @@
+[Unit]
+Description=Servicio Demonio de Monitoreo Continuo
+After=network.target
+
+[Service]
+Type=simple
+User=israel
+ExecStart=/bin/bash /home/israel/ejercicio-demonio/Codigo/demonio_servicio.sh
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

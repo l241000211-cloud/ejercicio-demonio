@@ -41,7 +41,7 @@
 
 ## 📄 Reporte Formal
 
-* 📎 [Descargar Reporte PDF](Reporte/Reporte_Demonio_Systemd.pdf)
+* 📎 [Descargar Reporte PDF](Reporte_Demonio_Systemd.pdf)
 
 ▶️ Ver video de demostración en YouTube
 
